@@ -3,7 +3,11 @@
     "description": "Categorizable Polymorphic Eloquent Models for Laravel 5",
     "require": {
         "php": ">=5.5.9",
+<<<<<<< f3547faadd50e0f5cec13ac30661fc2d6421f68e
         "tshafer/laravel-service-provider": "1.0.*@dev",
+=======
+        "draperstudio/laravel-service-provider": "1.0.*@dev",
+>>>>>>> Initial
         "illuminate/database": "~5.0|~5.1",
         "kalnoy/nestedset": "~3.0",
         "cviebrock/eloquent-sluggable": "~3.0"
@@ -12,5 +16,13 @@
         "psr-4": {
             "Tshafer\\Categorizable\\": "src/"
         }
+<<<<<<< f3547faadd50e0f5cec13ac30661fc2d6421f68e
+=======
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+>>>>>>> Initial
     }
 }

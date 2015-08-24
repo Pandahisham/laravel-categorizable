@@ -5,14 +5,22 @@
 First, pull in the package through Composer.
 
 ```js
+<<<<<<< f3547faadd50e0f5cec13ac30661fc2d6421f68e
 composer require tshafer/laravel-categorizable:v1.0.0
+=======
+composer require tshafer/laravel-categorizable
+>>>>>>> Initial
 ```
 
 And then include the service provider within `app/config/app.php`.
 
 ```php
 'providers' => [
+<<<<<<< f3547faadd50e0f5cec13ac30661fc2d6421f68e
     Tshafer\Categorizable\ServiceProvider::class
+=======
+    DraperStudio\Categorizable\ServiceProvider::class
+>>>>>>> Initial
 ];
 ```
 
@@ -32,11 +40,19 @@ Check [lazychaser/laravel-nestedset](https://github.com/lazychaser/laravel-neste
 
 namespace App;
 
+<<<<<<< f3547faadd50e0f5cec13ac30661fc2d6421f68e
 use Tshafer\Catagorizable\Contracts\Catagorizable;
 use Tshafer\Catagorizable\Traits\Catagorizable as CatagorizableTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model implements Catagorizable
+=======
+use DraperStudio\Questionable\Contracts\Questionable;
+use DraperStudio\Questionable\Traits\Questionable as QuestionableTrait;
+use Illuminate\Database\Eloquent\Model;
+
+class Post extends Model implements Questionable
+>>>>>>> Initial
 {
     use CategorizableTrait;
 }
@@ -78,4 +94,11 @@ $post->removeCategory(Category::find(1));
 ### Get all Posts that are attached to the given Category
 ```php
 Category::first()->entries(Post::class)->get();
+<<<<<<< f3547faadd50e0f5cec13ac30661fc2d6421f68e
 ```
+=======
+```
+
+
+
+>>>>>>> Initial
