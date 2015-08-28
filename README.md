@@ -32,11 +32,11 @@ Check [lazychaser/laravel-nestedset](https://github.com/lazychaser/laravel-neste
 
 namespace App;
 
-use DraperTshaferStudio\Questionable\Contracts\Questionable;
-use Tshafer\Questionable\Traits\Questionable as QuestionableTrait;
+use Tshafer\Questionable\Contracts\Catagorizable;
+use Tshafer\Questionable\Traits\Catagorizable as CatagorizableTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model implements Questionable
+class Post extends Model implements Catagorizable
 {
     use CategorizableTrait;
 }
