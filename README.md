@@ -5,14 +5,14 @@
 First, pull in the package through Composer.
 
 ```js
-composer require tshafer/laravel-categorizable
+composer require tshafer/laravel-categorizable:dev-master
 ```
 
 And then include the service provider within `app/config/app.php`.
 
 ```php
 'providers' => [
-    DraperStudio\Categorizable\ServiceProvider::class
+    Tshafer\Categorizable\ServiceProvider::class
 ];
 ```
 
@@ -32,8 +32,8 @@ Check [lazychaser/laravel-nestedset](https://github.com/lazychaser/laravel-neste
 
 namespace App;
 
-use DraperStudio\Questionable\Contracts\Questionable;
-use DraperStudio\Questionable\Traits\Questionable as QuestionableTrait;
+use DraperTshaferStudio\Questionable\Contracts\Questionable;
+use Tshafer\Questionable\Traits\Questionable as QuestionableTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model implements Questionable
