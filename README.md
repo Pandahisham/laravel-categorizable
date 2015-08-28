@@ -5,7 +5,7 @@
 First, pull in the package through Composer.
 
 ```js
-composer require tshafer/laravel-categorizable:dev-master
+composer require tshafer/laravel-categorizable:v1.0.0
 ```
 
 And then include the service provider within `app/config/app.php`.
@@ -79,6 +79,3 @@ $post->removeCategory(Category::find(1));
 ```php
 Category::first()->entries(Post::class)->get();
 ```
-
-
-
