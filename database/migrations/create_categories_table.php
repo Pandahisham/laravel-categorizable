@@ -8,7 +8,6 @@ use Illuminate\Database\Schema\Blueprint;
  */
 class CreateCategoriesTable extends Migration
 {
-
     public function up()
     {
         Schema::create('categories', function (Blueprint $table) {
@@ -26,7 +25,6 @@ class CreateCategoriesTable extends Migration
             $table->timestamps();
         });
     }
-
 
     public function down()
     {

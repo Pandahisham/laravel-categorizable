@@ -1,15 +1,14 @@
 <?php
 
-    namespace Tshafer\Categorizable\Contracts;
+namespace Tshafer\Categorizable\Contracts;
 
-    use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
     /**
      * Interface Categorizable.
      */
     interface Categorizable
     {
-
         /**
          * @return \Illuminate\Database\Eloquent\Relations\MorphMany
          */
@@ -25,33 +24,33 @@
          *
          * @return mixed
          */
-        public function categorize( $categories );
+        public function categorize($categories);
 
         /**
          * @param $categories
          *
          * @return mixed
          */
-        public function uncategorize( $categories );
+        public function uncategorize($categories);
 
         /**
          * @param $categories
          *
          * @return mixed
          */
-        public function recategorize( $categories );
+        public function recategorize($categories);
 
         /**
          * @param Model $category
          *
          * @return mixed
          */
-        public function addCategory( Model $category );
+        public function addCategory(Model $category);
 
         /**
          * @param Model $category
          *
          * @return mixed
          */
-        public function removeCategory( Model $category );
+        public function removeCategory(Model $category);
     }
