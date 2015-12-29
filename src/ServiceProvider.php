@@ -2,6 +2,7 @@
 
 namespace Tshafer\Categorizable;
 
+use Cviebrock\EloquentSluggable\SluggableServiceProvider;
 use Tshafer\ServiceProvider\ServiceProvider as BaseProvider;
 
 /**
