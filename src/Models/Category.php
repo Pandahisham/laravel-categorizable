@@ -2,7 +2,7 @@
 
 namespace Tshafer\Categorizable\Models;
 
-use Cviebrock\EloquentSluggable\SluggableInterface;
+    use Cviebrock\EloquentSluggable\SluggableInterface;
     use Cviebrock\EloquentSluggable\SluggableTrait;
     use Kalnoy\Nestedset\Node;
 
