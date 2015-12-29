@@ -5,24 +5,19 @@ namespace Tshafer\Categorizable;
 use Tshafer\ServiceProvider\ServiceProvider as BaseProvider;
 
 /**
- * Class ServiceProvider
- *
- * @package Tshafer\Categorizable
+ * Class ServiceProvider.
  */
 class ServiceProvider extends BaseProvider
 {
-
     /**
      * @var string
      */
     protected $packageName = 'categorizable';
 
-
     public function boot()
     {
         $this->setup(__DIR__)->publishMigrations();
     }
-
 
     public function register()
     {

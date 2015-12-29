@@ -1,8 +1,8 @@
 <?php
 
-    namespace Tshafer\Categorizable\Models;
+namespace Tshafer\Categorizable\Models;
 
-    use Cviebrock\EloquentSluggable\SluggableInterface;
+use Cviebrock\EloquentSluggable\SluggableInterface;
     use Cviebrock\EloquentSluggable\SluggableTrait;
     use Kalnoy\Nestedset\Node;
 
@@ -11,18 +11,17 @@
      */
     class Category extends Node implements SluggableInterface
     {
-
         use SluggableTrait;
 
         /**
          * @var array
          */
-        protected $sluggable = [ 'build_from' => 'name' ];
+        protected $sluggable = ['build_from' => 'name'];
 
         /**
          * @var array
          */
-        protected $guarded = [ 'id', 'created_at', 'updated_at' ];
+        protected $guarded = ['id', 'created_at', 'updated_at'];
 
         /**
          * @return \Illuminate\Database\Eloquent\Relations\MorphTo
@@ -37,9 +36,9 @@
          *
          * @return \Illuminate\Database\Eloquent\Relations\MorphToMany
          */
-        public function entries( $class )
+        public function entries($class)
         {
-            return $this->morphedByMany( $class, 'categorizable', 'categories_relations' );
+            return $this->morphedByMany($class, 'categorizable', 'categories_relations');
         }
 
         /**
