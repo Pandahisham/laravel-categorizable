@@ -1,35 +1,16 @@
 {
-    "name": "tshafer/laravel-categorizable",
-    "description": "Categorizable Polymorphic Eloquent Models for Laravel 5",
-    "require": {
-        "php": ">=5.5.9",
-<<<<<<< c7503b1e158db16eef4a34a3064a444c4492f5dd
-<<<<<<< f3547faadd50e0f5cec13ac30661fc2d6421f68e
-        "tshafer/laravel-service-provider": "1.0.*@dev",
-=======
-        "draperstudio/laravel-service-provider": "1.0.*@dev",
->>>>>>> Initial
-=======
-        "tshafer/laravel-service-provider": "1.0.*@dev",
->>>>>>> Fixes
-        "illuminate/database": "~5.0|~5.1",
-        "kalnoy/nestedset": "~3.0",
-        "cviebrock/eloquent-sluggable": "~3.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Tshafer\\Categorizable\\": "src/"
-        }
-<<<<<<< c7503b1e158db16eef4a34a3064a444c4492f5dd
-<<<<<<< f3547faadd50e0f5cec13ac30661fc2d6421f68e
-=======
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
->>>>>>> Initial
-=======
->>>>>>> Fixes
+  "name": "tshafer/laravel-categorizable",
+  "description": "Categorizable Polymorphic Eloquent Models for Laravel 5",
+  "require": {
+    "php": ">=5.5.9",
+    "tshafer/laravel-service-provider": "1.0.*",
+    "illuminate/database": "~5.1|~5.2",
+    "kalnoy/nestedset": "~3.0",
+    "cviebrock/eloquent-sluggable": "~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tshafer\\Categorizable\\": "src/"
     }
+  }
 }
